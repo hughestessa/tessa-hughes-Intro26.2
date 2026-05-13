@@ -1,0 +1,130 @@
+body {
+    background-color: seashell;
+    color:rgb(23, 31, 104);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+.main-nav {
+    background-color:cadetblue;
+    margin: 0;
+    border: 0;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 5px 0px;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-nav li {
+    padding: 0px 10px;
+    display: block;
+}
+
+.Name {
+    width: 100%;
+    background-color: rgb(23, 31, 104);
+    color: seashell;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#About {
+    width: 400px;
+    margin: 0 auto;
+    border: 5px solid  rgb(116, 120, 136);
+    margin-bottom: 20px;
+}
+
+#About h2 {
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+    margin-bottom: 0;
+}
+
+#About p{
+    padding-right: 10px;
+}
+
+#About img {
+    width: 150px;
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(116, 120, 136);
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: 0;
+   
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.column {
+    flex: 1;
+}
+
+#Experience{
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Experience ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Experience li{
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    margin: 0px 5px;
+    justify-content: center;
+    display: block;
+}
+
+#Connect{
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Credits{
+    width: 100%;
+    background-color: rgb(23, 31, 104);
+    color: seashell;
+    text-align: center;
+    padding: 5px;
+}
+
+#Skills{
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Projects{
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
