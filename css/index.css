@@ -5,6 +5,7 @@ body {
     margin: 0;
 }
 
+
 .main-nav {
     background-color:cadetblue;
     margin: 0;
@@ -18,12 +19,13 @@ body {
 .main-nav ul {
     display: flex;
     justify-content: center;
-
+    gap: 50px;
 }
 
 .main-nav li {
     padding: 0px 10px;
     display: block;
+    
 }
 
 .Name {
@@ -36,7 +38,7 @@ body {
 }
 
 #About {
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
     border: 5px solid  rgb(116, 120, 136);
     margin-bottom: 20px;
@@ -79,7 +81,7 @@ h2 {
 
 #Experience{
     text-align: left;
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -102,7 +104,7 @@ h2 {
 
 #Connect{
     text-align: left;
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
     margin-bottom: 20px;
     display: flex;
@@ -126,14 +128,37 @@ h2 {
 
 #Skills{
     text-align: left;
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
 #Projects{
     text-align: left;
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+#Skills{
+    text-align: left;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#Skills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Skills li{
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    margin: 0px 5px;
+    justify-content: center;
+    display: block;
 }
