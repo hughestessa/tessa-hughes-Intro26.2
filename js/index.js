@@ -22,4 +22,33 @@ skills.forEach(skill => {
     
 });
 
+//lesson 8 Message Form
+const messageForm  = document.querySelector('form[name="leave_message"]');
+messageForm.addEventListener('submit', event => {
+    event.preventDefault(); //To preserve to log without refreshing right away
+    
+    const usersName = event.currentTarget.usersName.value;
+    const usersEmail = event.currentTarget.usersEmail.value;
+    const usersMessage = event.currentTarget.usersMessage.value;
+    console.log(usersName, ' ', usersEmail, ' ', usersMessage);
+    
+    const messageSection = document.getElementById('messages');
+    const messageList = messageSection.querySelector('ul');
+    const newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span>${usersMessage} </span>`;
+    
+    const removeButton = document.createElement('button');
+    removeButton.innerText = 'remove';
+    removeButton.type = 'button';
+    removeButton.addEventListener('click', event => {
+        const entry = event.currentTarget.parentNode;
+        entry.remove();
+    });
+
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+
+    messageForm.reset(); //To clear the form
+});
+
 console.log('JS runs');
