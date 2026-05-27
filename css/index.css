@@ -149,8 +149,21 @@ h2 {
     padding-bottom: 5px;
 }
 
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
 textarea {
   width: 100%;            /* Fills the entire width of its parent container */
   max-width: 100%;        /* Prevents the user from resizing it past the screen edge */
   box-sizing: border-box; /* Ensures padding doesn't push it out of bounds */
+}
+
+input, textarea {
+    margin-bottom: 5px;
+}
+
+button {
+    color:rgb(23, 31, 104);
 }
