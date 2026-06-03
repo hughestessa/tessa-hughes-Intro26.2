@@ -15,6 +15,7 @@
                 <li><a href="#Connect">Connect</a></li>
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Projects">Projects</a></li>
+                <li><a href="#leave_message">Leave a Message</a></li>
             </ul>
         </nav>
     </header>
@@ -40,8 +41,7 @@
         <ul>
             <li>Business Analysis</li>
             <li>Product Management</li>
-            <li>Procurement</li>
-                       
+            <li>Procurement</li>           
         </ul>
     </section>
     <section id="Skills">
@@ -64,14 +64,31 @@
         <h2>Projects</h2>
         <ul></ul>
     </section>
-    <section id="Credits" style="font-size: 10px;">
-    <p></p>
-    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
-    <p></p>
-    <a href="https://www.flaticon.com/free-icons/github" title="github icons" >Github icons created by Dave Gandy - Flaticon</a>
-      
-    </section>
     </main>
+    <section id="leave_message">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="usersName">Name:</label><br>
+            <input type="text" id="usersName" name="usersName" required><br>
+            <label for="usersEmail">Email:</label><br>
+            <input type="email" id="usersEmail" name="usersEmail" required><br>
+            <label for="usersMessage">Message:</label><br>
+            <textarea id="usersMessage" name="usersMessage" rows="4" cols="70" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul>
+
+        </ul>
+    </section>
+    <footer id="Credits" style="font-size: 10px;">
+      <p></p>
+      <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+      <p></p>
+      <a href="https://www.flaticon.com/free-icons/github" title="github icons" >Github icons created by Dave Gandy - Flaticon</a>
+    </footer>
   <script src="js/index.js"></script>
 </body>
 </html>

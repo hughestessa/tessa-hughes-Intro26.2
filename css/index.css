@@ -5,7 +5,6 @@ body {
     margin: 0;
 }
 
-
 .main-nav {
     background-color:cadetblue;
     margin: 0;
@@ -25,7 +24,16 @@ body {
 .main-nav li {
     padding: 0px 10px;
     display: block;
-    
+}
+
+/* Mobile Responsive Style */
+@media (max-width: 600px) {
+    .main-nav ul {
+        flex-direction: column; /* Stacks links vertically when small screen */
+        align-items: center;    /* Centers the stacked links */
+        gap: 5px;              /* Reduces space between stacked links */
+        padding: 5px 0px;      /* Adds a little breathing room top and bottom */
+    }
 }
 
 .Name {
@@ -37,9 +45,15 @@ body {
     margin-bottom: 20px;
 }
 
-#About {
-    width: 600px;
+#About, #Experience, #Skills, #Connect, #Projects, #messages, #leave_message{
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#About {
     border: 5px solid  rgb(116, 120, 136);
     margin-bottom: 20px;
 }
@@ -79,13 +93,6 @@ h2 {
     flex: 1;
 }
 
-#Experience{
-    text-align: left;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
 #Experience ul{
     display: flex;
     flex-direction: row;
@@ -103,10 +110,6 @@ h2 {
 }
 
 #Connect{
-    text-align: left;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -126,27 +129,6 @@ h2 {
     padding: 5px;
 }
 
-#Skills{
-    text-align: left;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-#Projects{
-    text-align: left;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-#Skills{
-    text-align: left;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
 #Skills ul{
     display: flex;
     flex-direction: row;
@@ -161,4 +143,27 @@ h2 {
     margin: 0px 5px;
     justify-content: center;
     display: block;
+}
+
+#messages li{
+    padding-bottom: 5px;
+}
+
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
+textarea {
+  width: 100%;            /* Fills the entire width of its parent container */
+  max-width: 100%;        /* Prevents the user from resizing it past the screen edge */
+  box-sizing: border-box; /* Ensures padding doesn't push it out of bounds */
+}
+
+input, textarea {
+    margin-bottom: 5px;
+}
+
+button {
+    color:rgb(23, 31, 104);
 }
