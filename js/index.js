@@ -77,11 +77,11 @@ getGithubRepos()
      const projectSection = document.getElementById("Projects");
      const projectList = projectSection.querySelector("ul");
 
-     repositories.forEach(project => {
-       const newProject = document.createElement('li');
-       newProject.innerText = project["name"];
-       projectList.appendChild(newProject);
-       console.log(newProject.innerText);
+     repositories.forEach(repo => {
+       const project = document.createElement('li');
+       project.innerText = repo["name"];
+       projectList.appendChild(project);
+       console.log(project.innerText);
       });
    })
   .catch(err => console.error(err));
