@@ -53,3 +53,37 @@ messageForm.addEventListener('submit', event => {
 });
 
 console.log('JS runs');
+
+//lesson 9 Fetch
+
+async function getGithubRepos() {
+  try {    
+    const response = await fetch('https://api.github.com/users/hughestessa/repos');
+    if (!response.ok) {
+      throw new Error(response.status);  
+    }
+    const data = await response.json()
+    return data;
+  } catch (error) {
+    console.log('Could not fetch repos');
+    console.error(error);  
+  } 
+}
+getGithubRepos()
+  .then(repos => {
+     console.log("repos: ", repos);
+     let repositories = repos;
+
+     const projectSection = document.getElementById("Projects");
+     const projectList = projectSection.querySelector("ul");
+
+     repositories.forEach(project => {
+       const newProject = document.createElement('li');
+       newProject.innerText = project["name"];
+       projectList.appendChild(newProject);
+       console.log(newProject.innerText);
+      });
+   })
+  .catch(err => console.error(err));
+
+
