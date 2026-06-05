@@ -63,12 +63,39 @@ async function getGithubRepos() {
       throw new Error(response.status);  
     }
     const data = await response.json()
+
+    console.log("repos: ", data);
+     let repositories = data;
+
+     const projectSection = document.getElementById("Projects");
+     const projectList = projectSection.querySelector("ul");
+
+     repositories.forEach(repo => {
+       const project = document.createElement('li');
+       project.innerText = repo["name"];
+       projectList.appendChild(project);
+       console.log(project.innerText);
+      });
+
     return data;
+    
   } catch (error) {
     console.log('Could not fetch repos');
     console.error(error);  
+
+    //error message in projects list
+     const projectSection = document.getElementById("Projects");
+     const projectList = projectSection.querySelector("ul");
+     const projectError = document.createElement('li');
+     projectError.innerText = "No projects found.";
+     projectList.appendChild(projectError);
   } 
 }
+
+
+getGithubRepos();
+
+/*
 getGithubRepos()
   .then(repos => {
      console.log("repos: ", repos);
@@ -85,5 +112,5 @@ getGithubRepos()
       });
    })
   .catch(err => console.error(err));
-
+*/
 
