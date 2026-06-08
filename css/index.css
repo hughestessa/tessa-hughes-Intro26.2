@@ -167,3 +167,10 @@ input, textarea {
 button {
     color:rgb(23, 31, 104);
 }
+
+
+#Projects li {
+    color: cadetblue;
+    padding: 5px;
+    font-weight: bold;
+}
