@@ -1,5 +1,4 @@
 /*Weather API*/
-const BASE_URL = 'https://api.open-meteo.com/v1/forcast';
 const COORDS = 'latitude=34.7448&longitude=-87.6675'; /*Muscle Shoals, AL*/
 
 const weatherDescriptions = {
