@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tessa Hughes OpenAPI Document</title>
+    <link href="css/openapi.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Return to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Weather OpenAPI</h1>
+        <section id="Weather">
+            <form id="search_weather">
+                <label>How's the weather in Muscle Shoals, AL today?</label><br>
+                <button type="submit">Get today's weather</button>
+            </form>
+            <img id="weatherIcon" src="" alt="Weather Condition" style="display: none;">
+            <p id="temperatureMin"></p>
+            <p id="temperatureMax">Press the button to find out...</p>
+            <p id="weather-condition"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+            <p id="error-message"><p><br><br>
+            
+        </section>
+        <section id="AirQuality">
+            <form id="search_air_quality">
+                <label>How's the air quality in Muscle Shoals, AL today?</label><br>
+                <button type="submit">Get today's air quality index</button>
+            </form>
+            <p id="airQuality">Press the button to find out...</p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>    
+    <script src="js/openapi.js" defer></script>
+</body>
+</html>
