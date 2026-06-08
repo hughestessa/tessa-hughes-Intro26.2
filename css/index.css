@@ -27,7 +27,7 @@ body {
 }
 
 /* Mobile Responsive Style */
-@media (max-width: 600px) {
+@media (max-width: 620px) {
     .main-nav ul {
         flex-direction: column; /* Stacks links vertically when small screen */
         align-items: center;    /* Centers the stacked links */
